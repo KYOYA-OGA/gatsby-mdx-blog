@@ -1,0 +1,71 @@
+---
+title: Gatsby Tutorial
+slug: gatsby-tutorial
+image: ./images/gatsby-1.png
+date: 2021-04-09
+author: john smith
+category: gatsby
+readTime: 30
+---
+
+import { Link } from 'gatsby'
+import { FiInfo } from 'react-icons/fi'
+import { Counter, LikeButton } from '../../components/Complete'
+
+# this is mdx page
+
+**I'm baby hexagon cloud bread yr, raw denim bicycle rights occupy humblebrag street art slow-carb affogato portland. Before they sold out kickstarter forage,** lumbersexual raclette prism pok pok squid. Chicharrones pop-up hella, four loko cliche street art aesthetic flexitarian tousled wolf post-ironic. Tbh raclette try-hard narwhal live-edge tacos cronut fam taxidermy blue bottle slow-carb austin. Flexitarian celiac gastropub before they sold out, street art flannel waistcoat single-origin coffee biodiesel kickstarter etsy.
+
+<div className="code">
+
+```js
+const firstName = 'john'
+```
+
+</div>
+
+<div className="nice-text">
+
+<h3>nice text</h3>
+
+<FiInfo className="nice-text-icon"></FiInfo>
+
+I'm baby brooklyn mumblecore pinterest mlkshk yuccie yr +1 whatever deep v kitsch craft beer edison bulb direct trade. Retro taiyaki tumeric swag bushwick lumbersexual whatever XOXO. Yuccie XOXO pabst green juice. Mustache sartorial whatever scenester semiotics. Sriracha pour-over tote bag humblebrag retro biodiesel, mumblecore roof party succulents ennui tbh seitan.
+
+</div>
+
+<h2> React Components</h2>
+
+<Counter />
+
+```jsx
+import React from 'react'
+import styled from 'styled-components'
+import { AiOutlineLike } from 'react-icons/ai'
+const LikeButton = () => {
+  const [value, setValue] = React.useState(0)
+  return (
+    <Wrapper>
+      <div>
+        <button onClick={() => setValue(value + 1)}>
+          <AiOutlineLike />
+        </button>
+        <p>
+          Liked the post?
+          <br />
+          Click thumbs up few times
+        </p>
+      </div>
+      <span>+{value}</span>
+    </Wrapper>
+  )
+}
+```
+
+<LikeButton />
+
+![nice image](./images/gatsby-1.png)
+
+<Link to="/posts" className="btn center-btn">
+  all posts
+</Link>

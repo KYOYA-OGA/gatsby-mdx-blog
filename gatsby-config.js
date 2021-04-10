@@ -8,7 +8,6 @@ module.exports = {
     twitterUsername: `@john_smilga`,
   },
   plugins: [
-    // `gatsby-plugin-mdx`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
 
@@ -31,7 +30,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        gatsbyRemarkPlugins: [{ resolve: "gatsby-remark-images" }],
+        gatsbyRemarkPlugins: [{ resolve: 'gatsby-remark-images' }],
       },
     },
     {
@@ -40,12 +39,12 @@ module.exports = {
         fonts: {
           google: [
             {
-              family: "Roboto",
-              variants: ["400", "500", "600", "700"],
+              family: 'Roboto',
+              variants: ['400', '500', '600', '700'],
             },
             {
-              family: "Open Sans",
-              variants: ["400", "500", "600", "700"],
+              family: 'Open Sans',
+              variants: ['400', '500', '600', '700'],
             },
           ],
         },
